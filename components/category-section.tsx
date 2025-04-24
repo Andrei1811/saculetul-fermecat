@@ -34,26 +34,26 @@ export function CategorySection() {
     const categories = [
         {
             name: "Săculețe Parfumate",
-            link: "#",
+            link: "#products",
             delay: 0,
             image: "/saculet2.jpg",
            
         },
         {
             name: "Decorațiuni Sezoniere",
-            link: "#",
+            link: "#products",
             delay: 200,
             image: "/img2.jpg"
         },
         {
             name: "Aranjamente Florale",
-            link: "#",
+            link: "#products",
             delay: 400,
             image: "/flori.jpg"
         },
         {
             name: "Cadouri Personalizate",
-            link: "#",
+            link: "#products",
             delay: 600,
             image: "/img3.jpg"
         },

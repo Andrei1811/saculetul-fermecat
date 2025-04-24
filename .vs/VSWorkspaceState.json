@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\components"
+    "\\components",
+    "\\components\\ui",
+    "\\hooks",
+    "\\lib",
+    "\\public",
+    "\\styles"
   ],
-  "SelectedNode": "\\components\\product-card.tsx",
+  "SelectedNode": "\\components\\scroll-to-top.tsx",
   "PreviewInSolutionExplorer": false
 }
