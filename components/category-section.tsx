@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from 'lucide-react'
 import Image from "next/image"
 
 export function CategorySection() {
@@ -34,28 +34,27 @@ export function CategorySection() {
     const categories = [
         {
             name: "Săculețe Parfumate",
-            link: "#products",
+            link: "/categorii/saculete-parfumate",
             delay: 0,
             image: "/saculet2.jpg",
-           
         },
         {
             name: "Decorațiuni Sezoniere",
-            link: "#products",
+            link: "/categorii/decoratiuni-sezoniere",
             delay: 200,
-            image: "/img2.jpg"
+            image: "/img2.jpg",
         },
         {
             name: "Aranjamente Florale",
-            link: "#products",
+            link: "/categorii/aranjamente-florale",
             delay: 400,
-            image: "/flori.jpg"
+            image: "/flori.jpg",
         },
         {
             name: "Cadouri Personalizate",
-            link: "#products",
+            link: "/categorii/cadouri-personalizate",
             delay: 600,
-            image: "/img3.jpg"
+            image: "/img3.jpg",
         },
     ]
 
@@ -84,13 +83,11 @@ export function CategorySection() {
                                     }`}
                                 style={{ transitionDelay: `${category.delay}ms` }}
                             >
-                                <div
-                                    className={`h-48 w-full bg-gradient-to-br ${category.color} flex items-center justify-center relative overflow-hidden`}
-                                >
+                                <div className={`h-48 w-full flex items-center justify-center relative overflow-hidden`}>
                                     {/* Imaginea de fundal */}
                                     {category.image && (
                                         <Image
-                                            src={category.image}
+                                            src={category.image || "/placeholder.svg"}
                                             alt={category.name}
                                             fill
                                             className="object-cover opacity-70 group-hover:opacity-80 transition-opacity duration-300"
